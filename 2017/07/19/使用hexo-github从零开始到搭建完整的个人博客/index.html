@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo,github," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="1. 安装Git Bash. 下载地址. 安装步骤：双击下载好的exe文件，一路next就好啦. 安装好后，打开gitbash，查看版本：命令：==git version== 然后你就可以在这里发挥你的聪明才智了2. 安装NodeJsHexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这玩意儿装了吧 . 下载地址. 安装步骤：反正下载好msi文件后，双击打开安装，">
+<meta name="keywords" content="Hexo,github">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用hexo+github从零开始到搭建完整的个人博客">
+<meta property="og:url" content="http://yoursite.com/2017/07/19/使用hexo-github从零开始到搭建完整的个人博客/index.html">
+<meta property="og:site_name" content="师亚伟~随便写写">
+<meta property="og:description" content="1. 安装Git Bash. 下载地址. 安装步骤：双击下载好的exe文件，一路next就好啦. 安装好后，打开gitbash，查看版本：命令：==git version== 然后你就可以在这里发挥你的聪明才智了2. 安装NodeJsHexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这玩意儿装了吧 . 下载地址. 安装步骤：反正下载好msi文件后，双击打开安装，">
+<meta property="og:image" content="http://otbt7qcgu.bkt.clouddn.com//17-7-19/24323927.jpg">
+<meta property="og:image" content="http://otbt7qcgu.bkt.clouddn.com//17-7-19/8387677.jpg">
+<meta property="og:image" content="http://otbt7qcgu.bkt.clouddn.com//17-7-19/37799597.jpg">
+<meta property="og:image" content="http://otbt7qcgu.bkt.clouddn.com//17-7-19/47441658.jpg">
+<meta property="og:image" content="http://otbt7qcgu.bkt.clouddn.com//17-7-19/60398318.jpg">
+<meta property="og:image" content="http://otbt7qcgu.bkt.clouddn.com//17-7-19/15906142.jpg">
+<meta property="og:image" content="http://otbt7qcgu.bkt.clouddn.com//17-7-19/47618043.jpg">
+<meta property="og:updated_time" content="2017-07-19T10:15:19.708Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用hexo+github从零开始到搭建完整的个人博客">
+<meta name="twitter:description" content="1. 安装Git Bash. 下载地址. 安装步骤：双击下载好的exe文件，一路next就好啦. 安装好后，打开gitbash，查看版本：命令：==git version== 然后你就可以在这里发挥你的聪明才智了2. 安装NodeJsHexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这玩意儿装了吧 . 下载地址. 安装步骤：反正下载好msi文件后，双击打开安装，">
+<meta name="twitter:image" content="http://otbt7qcgu.bkt.clouddn.com//17-7-19/24323927.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/07/19/使用hexo-github从零开始到搭建完整的个人博客/"/>
+
+
+
+
+
+  <title>使用hexo+github从零开始到搭建完整的个人博客 | 师亚伟~随便写写</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">师亚伟~随便写写</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">shiyawei</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/19/使用hexo-github从零开始到搭建完整的个人博客/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="师亚伟">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/homeico.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="师亚伟~随便写写">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">使用hexo+github从零开始到搭建完整的个人博客</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-19T16:16:57+08:00">
+                2017-07-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web前端/" itemprop="url" rel="index">
+                    <span itemprop="name">web前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="1-安装Git-Bash"><a href="#1-安装Git-Bash" class="headerlink" title="1. 安装Git Bash"></a>1. 安装Git Bash</h1><h3 id="下载地址"><a href="#下载地址" class="headerlink" title=". 下载地址"></a>. <a href="https://git-for-windows.github.io/" target="_blank" rel="external">下载地址</a></h3><h3 id="安装步骤：双击下载好的exe文件，一路next就好啦"><a href="#安装步骤：双击下载好的exe文件，一路next就好啦" class="headerlink" title=". 安装步骤：双击下载好的exe文件，一路next就好啦"></a>. 安装步骤：双击下载好的exe文件，一路next就好啦</h3><h3 id="安装好后，打开gitbash，查看版本："><a href="#安装好后，打开gitbash，查看版本：" class="headerlink" title=". 安装好后，打开gitbash，查看版本："></a>. 安装好后，打开gitbash，查看版本：</h3><h3 id="命令：-git-version"><a href="#命令：-git-version" class="headerlink" title="命令：==git version=="></a>命令：==git version==</h3><p><img src="http://otbt7qcgu.bkt.clouddn.com//17-7-19/24323927.jpg" alt=""></p>
+<h3 id="然后你就可以在这里发挥你的聪明才智了"><a href="#然后你就可以在这里发挥你的聪明才智了" class="headerlink" title="然后你就可以在这里发挥你的聪明才智了"></a>然后你就可以在这里发挥你的聪明才智了</h3><h1 id="2-安装NodeJs"><a href="#2-安装NodeJs" class="headerlink" title="2. 安装NodeJs"></a>2. 安装NodeJs</h1><p>Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这玩意儿装了吧</p>
+<h3 id="下载地址-1"><a href="#下载地址-1" class="headerlink" title=". 下载地址"></a>. <a href="https://nodejs.org/en/" target="_blank" rel="external">下载地址</a></h3><h3 id="安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom-Setup这一步记得选-Add-to-PATH-这样你就不用自己去配置电脑上环境变量了，装完在按-win-r-快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。"><a href="#安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom-Setup这一步记得选-Add-to-PATH-这样你就不用自己去配置电脑上环境变量了，装完在按-win-r-快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。" class="headerlink" title=". 安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 ==Add to PATH== ,这样你就不用自己去配置电脑上环境变量了，装完在按 ==win + r== 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。"></a>. 安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 ==Add to PATH== ,这样你就不用自己去配置电脑上环境变量了，装完在按 ==win + r== 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。</h3><h3 id="查看版本："><a href="#查看版本：" class="headerlink" title=". 查看版本："></a>. 查看版本：</h3><h3 id="emsp-emsp-命令：-node-v"><a href="#emsp-emsp-命令：-node-v" class="headerlink" title="&emsp;&emsp;  . 命令：==node -v=="></a>&emsp;&emsp;  <strong>.</strong> 命令：==node -v==</h3><p><img src="http://otbt7qcgu.bkt.clouddn.com//17-7-19/8387677.jpg" alt=""></p>
+<h3 id="又到自由发挥的时候了"><a href="#又到自由发挥的时候了" class="headerlink" title="又到自由发挥的时候了"></a>又到自由发挥的时候了</h3><h1 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3. 安装hexo"></a>3. 安装hexo</h1><p>看到这么多安装，千万不要紧张，小哥哥小姐姐们一定要稳住，别怕，因为后面的东西都是在gitbash中用npm工具安装就好了。</p>
+<h3 id="先创建一个文件夹（用来存放所有blog的东西），然后-cd-到该文件夹下。"><a href="#先创建一个文件夹（用来存放所有blog的东西），然后-cd-到该文件夹下。" class="headerlink" title=". 先创建一个文件夹（用来存放所有blog的东西），然后==cd==到该文件夹下。"></a>. 先创建一个文件夹（用来存放所有blog的东西），然后==cd==到该文件夹下。</h3><h3 id="安装hexo命令：-npm-i-g-hexo"><a href="#安装hexo命令：-npm-i-g-hexo" class="headerlink" title=". 安装hexo命令：==npm i -g hexo=="></a>. 安装hexo命令：==npm i -g hexo==</h3><h3 id="安装完成后，查看版本："><a href="#安装完成后，查看版本：" class="headerlink" title=". 安装完成后，查看版本："></a>. 安装完成后，查看版本：</h3><p><img src="http://otbt7qcgu.bkt.clouddn.com//17-7-19/37799597.jpg" alt=""></p>
+<h3 id="初始化命令：hexo-init-，初始化完成之后打开所在的文件夹可以看到以下文件："><a href="#初始化命令：hexo-init-，初始化完成之后打开所在的文件夹可以看到以下文件：" class="headerlink" title=". 初始化命令：hexo init ，初始化完成之后打开所在的文件夹可以看到以下文件："></a>. 初始化命令：hexo init ，初始化完成之后打开所在的文件夹可以看到以下文件：</h3><p><img src="http://otbt7qcgu.bkt.clouddn.com//17-7-19/47441658.jpg" alt=""></p>
+<h3 id="解释一下："><a href="#解释一下：" class="headerlink" title=". 解释一下："></a>. 解释一下：</h3><h3 id="emsp-emsp-node-modules：是依赖包"><a href="#emsp-emsp-node-modules：是依赖包" class="headerlink" title="&emsp;&emsp;  . node_modules：是依赖包"></a>&emsp;&emsp;  <strong>.</strong> node_modules：是依赖包</h3><h3 id="emsp-emsp-public：存放的是生成的页面"><a href="#emsp-emsp-public：存放的是生成的页面" class="headerlink" title="&emsp;&emsp;  . public：存放的是生成的页面"></a>&emsp;&emsp;  <strong>.</strong> public：存放的是生成的页面</h3><h3 id="emsp-emsp-scaffolds：命令生成文章等的模板"><a href="#emsp-emsp-scaffolds：命令生成文章等的模板" class="headerlink" title="&emsp;&emsp;  . scaffolds：命令生成文章等的模板"></a>&emsp;&emsp;  <strong>.</strong> scaffolds：命令生成文章等的模板</h3><h3 id="emsp-emsp-source：用命令创建的各种文章"><a href="#emsp-emsp-source：用命令创建的各种文章" class="headerlink" title="&emsp;&emsp;  . source：用命令创建的各种文章"></a>&emsp;&emsp;  <strong>.</strong> source：用命令创建的各种文章</h3><h3 id="emsp-emsp-themes：主题"><a href="#emsp-emsp-themes：主题" class="headerlink" title="&emsp;&emsp;  . themes：主题"></a>&emsp;&emsp;  <strong>.</strong> themes：主题</h3><h3 id="emsp-emsp-config-yml：整个博客的配置"><a href="#emsp-emsp-config-yml：整个博客的配置" class="headerlink" title="&emsp;&emsp;  . _config.yml：整个博客的配置"></a>&emsp;&emsp;  <strong>.</strong> _config.yml：整个博客的配置</h3><h3 id="emsp-emsp-db-json：source解析所得到的"><a href="#emsp-emsp-db-json：source解析所得到的" class="headerlink" title="&emsp;&emsp;  . db.json：source解析所得到的"></a>&emsp;&emsp;  <strong>.</strong> db.json：source解析所得到的</h3><h3 id="emsp-emsp-package-json：项目所需模块项目的配置信息"><a href="#emsp-emsp-package-json：项目所需模块项目的配置信息" class="headerlink" title="&emsp;&emsp;  . package.json：项目所需模块项目的配置信息"></a>&emsp;&emsp;  <strong>.</strong> package.json：项目所需模块项目的配置信息</h3><h3 id="做好这些前置工作之后接下来的就是各种配配配置了。"><a href="#做好这些前置工作之后接下来的就是各种配配配置了。" class="headerlink" title=". 做好这些前置工作之后接下来的就是各种配配配置了。"></a>. 做好这些前置工作之后接下来的就是各种配配配置了。</h3><h1 id="4-搭桥到github"><a href="#4-搭桥到github" class="headerlink" title="4. 搭桥到github"></a>4. 搭桥到github</h1><h3 id="没账号的创建账号，有账号的看下面。"><a href="#没账号的创建账号，有账号的看下面。" class="headerlink" title=". 没账号的创建账号，有账号的看下面。"></a>. 没账号的创建账号，有账号的看下面。</h3><ol>
+<li>创建一个repo，名称为==yourname.github.io==其中yourname是你的github名称，按照这个规则创建才有用哦，如下：</li>
+</ol>
+<p><img src="http://otbt7qcgu.bkt.clouddn.com//17-7-19/60398318.jpg" alt=""><br><img src="http://otbt7qcgu.bkt.clouddn.com//17-7-19/15906142.jpg" alt=""></p>
+<h1 id="5-一步之遥"><a href="#5-一步之遥" class="headerlink" title="5. 一步之遥"></a>5. 一步之遥</h1><h3 id="用编辑器打开你的blog项目，修改-config-yml文件的一些配置-冒号之后都是有一个半角空格的-："><a href="#用编辑器打开你的blog项目，修改-config-yml文件的一些配置-冒号之后都是有一个半角空格的-：" class="headerlink" title=". 用编辑器打开你的blog项目，修改_config.yml文件的一些配置(冒号之后都是有一个半角空格的)："></a>. 用编辑器打开你的blog项目，修改_config.yml文件的一些配置(冒号之后都是有一个半角空格的)：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/YourgithubName/YourgithubName.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<h3 id="回到gitbash中，进入你的blog目录，分别执行以下命令："><a href="#回到gitbash中，进入你的blog目录，分别执行以下命令：" class="headerlink" title=". 回到gitbash中，进入你的blog目录，分别执行以下命令："></a>. 回到gitbash中，进入你的blog目录，分别执行以下命令：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo server</div></pre></td></tr></table></figure>
+<h3 id="注：hexo-3-0把服务器独立成个别模块，需要单独安装：npm-i-hexo-server。"><a href="#注：hexo-3-0把服务器独立成个别模块，需要单独安装：npm-i-hexo-server。" class="headerlink" title="注：hexo 3.0把服务器独立成个别模块，需要单独安装：npm i hexo-server。"></a>注：hexo 3.0把服务器独立成个别模块，需要单独安装：npm i hexo-server。</h3><h3 id="打开浏览器输入：http-localhost-4000"><a href="#打开浏览器输入：http-localhost-4000" class="headerlink" title=". 打开浏览器输入：http://localhost:4000"></a>. 打开浏览器输入：<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></h3><h3 id="接着你就可以遇见天使的微笑了"><a href="#接着你就可以遇见天使的微笑了" class="headerlink" title=". 接着你就可以遇见天使的微笑了~"></a>. 接着你就可以遇见天使的微笑了~</h3><h1 id="6-上传到github"><a href="#6-上传到github" class="headerlink" title="6. 上传到github"></a>6. 上传到github</h1><h3 id="先安装一波：npm-install-hexo-deployer-git-–save（这样才能将你写好的文章部署到github服务器上并让别人浏览到）"><a href="#先安装一波：npm-install-hexo-deployer-git-–save（这样才能将你写好的文章部署到github服务器上并让别人浏览到）" class="headerlink" title=". 先安装一波：npm install hexo-deployer-git –save（这样才能将你写好的文章部署到github服务器上并让别人浏览到）"></a>. 先安装一波：npm install hexo-deployer-git –save（这样才能将你写好的文章部署到github服务器上并让别人浏览到）</h3><h3 id="执行命令-建议每次都按照如下步骤部署-："><a href="#执行命令-建议每次都按照如下步骤部署-：" class="headerlink" title=". 执行命令(建议每次都按照如下步骤部署)："></a>. 执行命令(建议每次都按照如下步骤部署)：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
+<h3 id="注意deploy的过程中要输入你的username及passward。"><a href="#注意deploy的过程中要输入你的username及passward。" class="headerlink" title="注意deploy的过程中要输入你的username及passward。"></a>注意deploy的过程中要输入你的username及passward。</h3><h3 id="在浏览器中输入http-yourgithubname-github-io就可以看到你的个人博客啦，是不是很兴奋！"><a href="#在浏览器中输入http-yourgithubname-github-io就可以看到你的个人博客啦，是不是很兴奋！" class="headerlink" title=". 在浏览器中输入http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！"></a>. 在浏览器中输入<a href="http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！" target="_blank" rel="external">http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！</a></h3><h3 id="感觉gitbash中东西太多的时候输入clear命令清空。"><a href="#感觉gitbash中东西太多的时候输入clear命令清空。" class="headerlink" title=". 感觉gitbash中东西太多的时候输入clear命令清空。"></a>. 感觉gitbash中东西太多的时候输入clear命令清空。</h3><h1 id="7-绑定个人域名"><a href="#7-绑定个人域名" class="headerlink" title="7. 绑定个人域名"></a>7. 绑定个人域名</h1><h3 id="不想绑定的自行忽略"><a href="#不想绑定的自行忽略" class="headerlink" title=". 不想绑定的自行忽略"></a>. 不想绑定的自行忽略</h3><h3 id="第一步购买域名：随便在哪个网站买一个就好了，我是在阿里云购买的shiyawei-com，欢迎访问。"><a href="#第一步购买域名：随便在哪个网站买一个就好了，我是在阿里云购买的shiyawei-com，欢迎访问。" class="headerlink" title=". 第一步购买域名：随便在哪个网站买一个就好了，我是在阿里云购买的shiyawei.com，欢迎访问。"></a>. 第一步购买域名：随便在哪个网站买一个就好了，我是在阿里云购买的<a href="http://shiyawei.com/" target="_blank" rel="external">shiyawei.com</a>，欢迎访问。</h3><h3 id="第二步添加CNAME：在项目的source文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是-shiyawei-com-只能添加一个哦。"><a href="#第二步添加CNAME：在项目的source文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是-shiyawei-com-只能添加一个哦。" class="headerlink" title=". 第二步添加CNAME：在项目的source文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是==shiyawei.com==只能添加一个哦。"></a>. 第二步添加CNAME：在项目的source文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是==shiyawei.com==只能添加一个哦。</h3><h3 id="到DNS中添加一条记录："><a href="#到DNS中添加一条记录：" class="headerlink" title=". 到DNS中添加一条记录："></a>. 到DNS中添加一条记录：</h3><p><img src="http://otbt7qcgu.bkt.clouddn.com//17-7-19/47618043.jpg" alt=""></p>
+<h3 id="接着再次部署一下，用你购买的域名打开，就可以看到你的博客啦"><a href="#接着再次部署一下，用你购买的域名打开，就可以看到你的博客啦" class="headerlink" title=". 接着再次部署一下，用你购买的域名打开，就可以看到你的博客啦~"></a>. 接着再次部署一下，用你购买的域名打开，就可以看到你的博客啦~</h3><h1 id="8-写文章部分"><a href="#8-写文章部分" class="headerlink" title="8 .写文章部分"></a>8 .写文章部分</h1><h3 id="新建文章：hexo-new-‘文章名’，然后你就可以在source-posts路径下看到你创建的文章啦，编辑完成之后按照前面说的方式部署，在浏览器刷新就能看到你的文章了。"><a href="#新建文章：hexo-new-‘文章名’，然后你就可以在source-posts路径下看到你创建的文章啦，编辑完成之后按照前面说的方式部署，在浏览器刷新就能看到你的文章了。" class="headerlink" title=". 新建文章：hexo new ‘文章名’，然后你就可以在source/_posts路径下看到你创建的文章啦，编辑完成之后按照前面说的方式部署，在浏览器刷新就能看到你的文章了。"></a>. 新建文章：hexo new ‘文章名’，然后你就可以在source/_posts路径下看到你创建的文章啦，编辑完成之后按照前面说的方式部署，在浏览器刷新就能看到你的文章了。</h3><h3 id="关于具体的文章编辑你可以看下官网的介绍"><a href="#关于具体的文章编辑你可以看下官网的介绍" class="headerlink" title=". [关于具体的文章编辑你可以看下官网的介绍"></a>. [关于具体的文章编辑你可以看下<a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="external">官网的介绍</a></h3><h3 id="至于markdown，可以自行发挥啦"><a href="#至于markdown，可以自行发挥啦" class="headerlink" title=". 至于markdown，可以自行发挥啦~"></a>. 至于markdown，可以自行发挥啦~</h3>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/tags/github/" rel="tag"># github</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/17/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/homeico.jpg"
+               alt="师亚伟" />
+          <p class="site-author-name" itemprop="name">师亚伟</p>
+           
+              <p class="site-description motion-element" itemprop="description">前端界的一枚菜鸟</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/shiyawei415" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/your-user-name" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-安装Git-Bash"><span class="nav-number">1.</span> <span class="nav-text">1. 安装Git Bash</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载地址"><span class="nav-number">1.0.1.</span> <span class="nav-text">. 下载地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装步骤：双击下载好的exe文件，一路next就好啦"><span class="nav-number">1.0.2.</span> <span class="nav-text">. 安装步骤：双击下载好的exe文件，一路next就好啦</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装好后，打开gitbash，查看版本："><span class="nav-number">1.0.3.</span> <span class="nav-text">. 安装好后，打开gitbash，查看版本：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命令：-git-version"><span class="nav-number">1.0.4.</span> <span class="nav-text">命令：==git version==</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#然后你就可以在这里发挥你的聪明才智了"><span class="nav-number">1.0.5.</span> <span class="nav-text">然后你就可以在这里发挥你的聪明才智了</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-安装NodeJs"><span class="nav-number">2.</span> <span class="nav-text">2. 安装NodeJs</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载地址-1"><span class="nav-number">2.0.1.</span> <span class="nav-text">. 下载地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom-Setup这一步记得选-Add-to-PATH-这样你就不用自己去配置电脑上环境变量了，装完在按-win-r-快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。"><span class="nav-number">2.0.2.</span> <span class="nav-text">. 安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 ==Add to PATH== ,这样你就不用自己去配置电脑上环境变量了，装完在按 ==win + r== 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看版本："><span class="nav-number">2.0.3.</span> <span class="nav-text">. 查看版本：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#emsp-emsp-命令：-node-v"><span class="nav-number">2.0.4.</span> <span class="nav-text">    . 命令：==node -v==</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#又到自由发挥的时候了"><span class="nav-number">2.0.5.</span> <span class="nav-text">又到自由发挥的时候了</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-安装hexo"><span class="nav-number">3.</span> <span class="nav-text">3. 安装hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#先创建一个文件夹（用来存放所有blog的东西），然后-cd-到该文件夹下。"><span class="nav-number">3.0.1.</span> <span class="nav-text">. 先创建一个文件夹（用来存放所有blog的东西），然后==cd==到该文件夹下。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo命令：-npm-i-g-hexo"><span class="nav-number">3.0.2.</span> <span class="nav-text">. 安装hexo命令：==npm i -g hexo==</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装完成后，查看版本："><span class="nav-number">3.0.3.</span> <span class="nav-text">. 安装完成后，查看版本：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化命令：hexo-init-，初始化完成之后打开所在的文件夹可以看到以下文件："><span class="nav-number">3.0.4.</span> <span class="nav-text">. 初始化命令：hexo init ，初始化完成之后打开所在的文件夹可以看到以下文件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解释一下："><span class="nav-number">3.0.5.</span> <span class="nav-text">. 解释一下：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#emsp-emsp-node-modules：是依赖包"><span class="nav-number">3.0.6.</span> <span class="nav-text">    . node_modules：是依赖包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#emsp-emsp-public：存放的是生成的页面"><span class="nav-number">3.0.7.</span> <span class="nav-text">    . public：存放的是生成的页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#emsp-emsp-scaffolds：命令生成文章等的模板"><span class="nav-number">3.0.8.</span> <span class="nav-text">    . scaffolds：命令生成文章等的模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#emsp-emsp-source：用命令创建的各种文章"><span class="nav-number">3.0.9.</span> <span class="nav-text">    . source：用命令创建的各种文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#emsp-emsp-themes：主题"><span class="nav-number">3.0.10.</span> <span class="nav-text">    . themes：主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#emsp-emsp-config-yml：整个博客的配置"><span class="nav-number">3.0.11.</span> <span class="nav-text">    . _config.yml：整个博客的配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#emsp-emsp-db-json：source解析所得到的"><span class="nav-number">3.0.12.</span> <span class="nav-text">    . db.json：source解析所得到的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#emsp-emsp-package-json：项目所需模块项目的配置信息"><span class="nav-number">3.0.13.</span> <span class="nav-text">    . package.json：项目所需模块项目的配置信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#做好这些前置工作之后接下来的就是各种配配配置了。"><span class="nav-number">3.0.14.</span> <span class="nav-text">. 做好这些前置工作之后接下来的就是各种配配配置了。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-搭桥到github"><span class="nav-number">4.</span> <span class="nav-text">4. 搭桥到github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#没账号的创建账号，有账号的看下面。"><span class="nav-number">4.0.1.</span> <span class="nav-text">. 没账号的创建账号，有账号的看下面。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-一步之遥"><span class="nav-number">5.</span> <span class="nav-text">5. 一步之遥</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用编辑器打开你的blog项目，修改-config-yml文件的一些配置-冒号之后都是有一个半角空格的-："><span class="nav-number">5.0.1.</span> <span class="nav-text">. 用编辑器打开你的blog项目，修改_config.yml文件的一些配置(冒号之后都是有一个半角空格的)：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#回到gitbash中，进入你的blog目录，分别执行以下命令："><span class="nav-number">5.0.2.</span> <span class="nav-text">. 回到gitbash中，进入你的blog目录，分别执行以下命令：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注：hexo-3-0把服务器独立成个别模块，需要单独安装：npm-i-hexo-server。"><span class="nav-number">5.0.3.</span> <span class="nav-text">注：hexo 3.0把服务器独立成个别模块，需要单独安装：npm i hexo-server。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打开浏览器输入：http-localhost-4000"><span class="nav-number">5.0.4.</span> <span class="nav-text">. 打开浏览器输入：http://localhost:4000</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#接着你就可以遇见天使的微笑了"><span class="nav-number">5.0.5.</span> <span class="nav-text">. 接着你就可以遇见天使的微笑了~</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-上传到github"><span class="nav-number">6.</span> <span class="nav-text">6. 上传到github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#先安装一波：npm-install-hexo-deployer-git-–save（这样才能将你写好的文章部署到github服务器上并让别人浏览到）"><span class="nav-number">6.0.1.</span> <span class="nav-text">. 先安装一波：npm install hexo-deployer-git –save（这样才能将你写好的文章部署到github服务器上并让别人浏览到）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#执行命令-建议每次都按照如下步骤部署-："><span class="nav-number">6.0.2.</span> <span class="nav-text">. 执行命令(建议每次都按照如下步骤部署)：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意deploy的过程中要输入你的username及passward。"><span class="nav-number">6.0.3.</span> <span class="nav-text">注意deploy的过程中要输入你的username及passward。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在浏览器中输入http-yourgithubname-github-io就可以看到你的个人博客啦，是不是很兴奋！"><span class="nav-number">6.0.4.</span> <span class="nav-text">. 在浏览器中输入http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#感觉gitbash中东西太多的时候输入clear命令清空。"><span class="nav-number">6.0.5.</span> <span class="nav-text">. 感觉gitbash中东西太多的时候输入clear命令清空。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-绑定个人域名"><span class="nav-number">7.</span> <span class="nav-text">7. 绑定个人域名</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#不想绑定的自行忽略"><span class="nav-number">7.0.1.</span> <span class="nav-text">. 不想绑定的自行忽略</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第一步购买域名：随便在哪个网站买一个就好了，我是在阿里云购买的shiyawei-com，欢迎访问。"><span class="nav-number">7.0.2.</span> <span class="nav-text">. 第一步购买域名：随便在哪个网站买一个就好了，我是在阿里云购买的shiyawei.com，欢迎访问。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二步添加CNAME：在项目的source文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是-shiyawei-com-只能添加一个哦。"><span class="nav-number">7.0.3.</span> <span class="nav-text">. 第二步添加CNAME：在项目的source文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是==shiyawei.com==只能添加一个哦。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#到DNS中添加一条记录："><span class="nav-number">7.0.4.</span> <span class="nav-text">. 到DNS中添加一条记录：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#接着再次部署一下，用你购买的域名打开，就可以看到你的博客啦"><span class="nav-number">7.0.5.</span> <span class="nav-text">. 接着再次部署一下，用你购买的域名打开，就可以看到你的博客啦~</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-写文章部分"><span class="nav-number">8.</span> <span class="nav-text">8 .写文章部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#新建文章：hexo-new-‘文章名’，然后你就可以在source-posts路径下看到你创建的文章啦，编辑完成之后按照前面说的方式部署，在浏览器刷新就能看到你的文章了。"><span class="nav-number">8.0.1.</span> <span class="nav-text">. 新建文章：hexo new ‘文章名’，然后你就可以在source/_posts路径下看到你创建的文章啦，编辑完成之后按照前面说的方式部署，在浏览器刷新就能看到你的文章了。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于具体的文章编辑你可以看下官网的介绍"><span class="nav-number">8.0.2.</span> <span class="nav-text">. [关于具体的文章编辑你可以看下官网的介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#至于markdown，可以自行发挥啦"><span class="nav-number">8.0.3.</span> <span class="nav-text">. 至于markdown，可以自行发挥啦~</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">师亚伟</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
