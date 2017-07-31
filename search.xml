@@ -49,6 +49,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[javaScript-浏览器版本、操作系统、内核、设备判断]]></title>
+    <url>%2F2017%2F03%2F15%2FjavaScript-%E6%B5%8F%E8%A7%88%E5%99%A8%E7%89%88%E6%9C%AC%E3%80%81%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E3%80%81%E5%86%85%E6%A0%B8%E3%80%81%E8%AE%BE%E5%A4%87%E5%88%A4%E6%96%AD%2F</url>
+    <content type="text"><![CDATA[javaScript-获取浏览器版本、操作系统、内核、设备信息 先引入Broeser.js。 调用： 查看有哪些属性？ 1234567891011121314var info = new Browser();//页面输出浏览器各个信息：document.writeln(&quot;浏览器：&quot;+info.browser+&quot;&lt;br/&gt;&quot;);document.writeln(&quot;版本：&quot;+info.version+&quot;&lt;br/&gt;&quot;);document.writeln(&quot;内核：&quot;+info.engine+&quot;&lt;br/&gt;&quot;);document.writeln(&quot;操作系统：&quot;+info.os+&quot;&lt;br/&gt;&quot;);document.writeln(&quot;设备：&quot;+info.device+&quot;&lt;br/&gt;&quot;);document.writeln(&quot;语言：&quot;+info.language+&quot;&lt;br/&gt;&quot;); //控制台查看所有浏览器信息console.log(info) 移动端和pc端判断 12345678var info = new Browser();//pc端和移动端判断if(info.device == &apos;PC&apos;)&#123; alert(&apos;pc端&apos;)&#125;else&#123; alert(&apos;移动端&apos;)&#125; 安卓系统和ios判断 或其他系统判断查看（Broeser.js）代码 123456789var info = new Browser();//安卓系统和ios判断if(info.os === &apos;iOS&apos;)&#123; alert(&apos;ios&apos;)&#125;if(info.os === &apos;Android&apos;)&#123; alert(&apos;Android&apos;)&#125;]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+        <tag>浏览器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2017%2F01%2F19%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
