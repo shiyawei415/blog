@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="javascript," />
 
 
 
@@ -93,16 +93,17 @@
 
 
 
-<meta name="description" content="前端界的一枚菜鸟">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta name="description" content="| js如何获取服务器端时间？用js做时间校正，获取本机时间，是存在bug的。 使用js也可获取到服务器时间，原理是使用 ajax请求，返回的头部信息就含有服务器端的时间信息，获取到就可以了。以下： 1、依赖jQuery代码： 123function getServerDate()&amp;#123;    return new Date($.ajax(&amp;#123;async: false&amp;#125;).">
+<meta name="keywords" content="javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js如何获取服务器端时间">
+<meta property="og:url" content="http://yoursite.com/2017/03/20/js如何获取服务器端时间？/index.html">
 <meta property="og:site_name" content="师亚伟~随便写写">
-<meta property="og:description" content="前端界的一枚菜鸟">
-<meta property="og:updated_time" content="2017-07-17T09:36:47.531Z">
+<meta property="og:description" content="| js如何获取服务器端时间？用js做时间校正，获取本机时间，是存在bug的。 使用js也可获取到服务器时间，原理是使用 ajax请求，返回的头部信息就含有服务器端的时间信息，获取到就可以了。以下： 1、依赖jQuery代码： 123function getServerDate()&amp;#123;    return new Date($.ajax(&amp;#123;async: false&amp;#125;).">
+<meta property="og:updated_time" content="2017-08-07T03:46:22.617Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="前端界的一枚菜鸟">
+<meta name="twitter:title" content="js如何获取服务器端时间">
+<meta name="twitter:description" content="| js如何获取服务器端时间？用js做时间校正，获取本机时间，是存在bug的。 使用js也可获取到服务器时间，原理是使用 ajax请求，返回的头部信息就含有服务器端的时间信息，获取到就可以了。以下： 1、依赖jQuery代码： 123function getServerDate()&amp;#123;    return new Date($.ajax(&amp;#123;async: false&amp;#125;).">
 
 
 
@@ -131,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/20/js如何获取服务器端时间？/"/>
 
 
 
 
 
-  <title>tags | 师亚伟~随便写写</title>
+  <title>js如何获取服务器端时间 | 师亚伟~随便写写</title>
   
 
 
@@ -303,18 +304,212 @@
             
 
   <div id="posts" class="posts-expand">
-  <header class="post-header">
+    
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
+  
 
+  
+  
+  
 
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/20/js如何获取服务器端时间？/">
 
-</header>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="师亚伟">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/homeico.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="师亚伟~随便写写">
+    </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">js如何获取服务器端时间</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-20T11:16:57+08:00">
+                2017-03-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web前端/" itemprop="url" rel="index">
+                    <span itemprop="name">web前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
+
+    <div class="post-body" itemprop="articleBody">
+
       
-    
+      
+
+      
+        <h1 id="js如何获取服务器端时间？"><a href="#js如何获取服务器端时间？" class="headerlink" title="| js如何获取服务器端时间？"></a>| js如何获取服务器端时间？</h1><p>用js做时间校正，获取本机时间，是存在bug的。</p>
+<p>使用js也可获取到服务器时间，原理是使用 ajax请求，返回的头部信息就含有服务器端的时间信息，获取到就可以了。以下：</p>
+<h2 id="1、依赖jQuery"><a href="#1、依赖jQuery" class="headerlink" title="1、依赖jQuery"></a>1、依赖jQuery</h2><p>代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function getServerDate()&#123;</div><div class="line">    return new Date($.ajax(&#123;async: false&#125;).getResponseHeader(&quot;Date&quot;));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>以上函数返回的就是一个Date对象，注意在使用ajax时必须同步，要不然无法返回时间日期。</p>
+<p>无需填写请求链接；</p>
+<p>如果服务器时间和本地时间有时差，需要做校正。</p>
+<h2 id="2、原生"><a href="#2、原生" class="headerlink" title="2、原生"></a>2、原生</h2><p>代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">function getServerDate()&#123;</div><div class="line">    var xhr = null;</div><div class="line">    if(window.XMLHttpRequest)&#123;</div><div class="line">      xhr = new window.XMLHttpRequest();</div><div class="line">    &#125;else&#123; // ie</div><div class="line">      xhr = new ActiveObject(&quot;Microsoft&quot;)</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    xhr.open(&quot;GET&quot;,&quot;/&quot;,false)//false不可变</div><div class="line">    xhr.send(null);</div><div class="line">    var date = xhr.getResponseHeader(&quot;Date&quot;);</div><div class="line">    return new Date(date);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>同样返回的是一个Date对象，xhr.open()必须使用同步;</p>
+<p>无需填写请求链接;open，send，和getResponseHeader 必须按序编写。</p>
+<p>如需使用异步请求，可监听onreadystatechange状态来做不同的操作。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">function getServerDate()&#123;</div><div class="line">    var xhr = null;</div><div class="line">    if(window.XMLHttpRequest)&#123;</div><div class="line">      xhr = new window.XMLHttpRequest();</div><div class="line">    &#125;else&#123; // ie</div><div class="line">      xhr = new ActiveObject(&quot;Microsoft&quot;)</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    xhr.open(&quot;GET&quot;,&quot;/&quot;,true);</div><div class="line">    xhr.send(null);</div><div class="line">    xhr.onreadystatechange=function()&#123;</div><div class="line">        var time,date;</div><div class="line">        if(xhr.readyState == 2)&#123;</div><div class="line">            time = xhr.getResponseHeader(&quot;Date&quot;);</div><div class="line">            date = new Date(time);</div><div class="line">            console.log(date);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>使用异步不是很方便返回时间。</p>
+<p>这里的readyState有四种状态，方便做不同处理：</p>
+<blockquote>
+<h4 id="0-请求未初始化"><a href="#0-请求未初始化" class="headerlink" title="0: 请求未初始化"></a>0: 请求未初始化</h4><h4 id="1-服务器连接已建立"><a href="#1-服务器连接已建立" class="headerlink" title="1: 服务器连接已建立"></a>1: 服务器连接已建立</h4><h4 id="2-请求已接收"><a href="#2-请求已接收" class="headerlink" title="2: 请求已接收"></a>2: 请求已接收</h4><h4 id="3-请求处理中"><a href="#3-请求处理中" class="headerlink" title="3: 请求处理中"></a>3: 请求处理中</h4><h4 id="4-请求已完成，且响应已就绪"><a href="#4-请求已完成，且响应已就绪" class="headerlink" title="4: 请求已完成，且响应已就绪"></a>4: 请求已完成，且响应已就绪</h4><p>失败状态，status的值：</p>
+</blockquote>
+<p>200: “OK”</p>
+<p>404: 未找到页面</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://otbt7qcgu.bkt.clouddn.com//17-7-20/3397761.jpg" alt="师亚伟 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://otbt7qcgu.bkt.clouddn.com//17-7-20/22204906.jpg" alt="师亚伟 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag"># javascript</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/15/javaScript-浏览器版本、操作系统、内核、设备判断/" rel="next" title="javaScript-浏览器版本、操作系统、内核、设备判断">
+                <i class="fa fa-chevron-left"></i> javaScript-浏览器版本、操作系统、内核、设备判断
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/19/git 基本使用/" rel="prev" title="git基本使用">
+                git基本使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -347,8 +542,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/homeico.jpg"
@@ -430,6 +634,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#js如何获取服务器端时间？"><span class="nav-number">1.</span> <span class="nav-text">| js如何获取服务器端时间？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、依赖jQuery"><span class="nav-number">1.1.</span> <span class="nav-text">1、依赖jQuery</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、原生"><span class="nav-number">1.2.</span> <span class="nav-text">2、原生</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#0-请求未初始化"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">0: 请求未初始化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-服务器连接已建立"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">1: 服务器连接已建立</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-请求已接收"><span class="nav-number">1.2.0.3.</span> <span class="nav-text">2: 请求已接收</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-请求处理中"><span class="nav-number">1.2.0.4.</span> <span class="nav-text">3: 请求处理中</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-请求已完成，且响应已就绪"><span class="nav-number">1.2.0.5.</span> <span class="nav-text">4: 请求已完成，且响应已就绪</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -564,10 +784,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 

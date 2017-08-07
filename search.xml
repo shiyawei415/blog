@@ -20,8 +20,8 @@
         <category>web前端</category>
       </categories>
       <tags>
-        <tag>github</tag>
         <tag>Hexo</tag>
+        <tag>github</tag>
       </tags>
   </entry>
   <entry>
@@ -44,8 +44,19 @@
         <category>web前端</category>
       </categories>
       <tags>
-        <tag>git</tag>
         <tag>github</tag>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[js如何获取服务器端时间]]></title>
+    <url>%2F2017%2F03%2F20%2Fjs%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E6%97%B6%E9%97%B4%EF%BC%9F%2F</url>
+    <content type="text"><![CDATA[| js如何获取服务器端时间？用js做时间校正，获取本机时间，是存在bug的。 使用js也可获取到服务器时间，原理是使用 ajax请求，返回的头部信息就含有服务器端的时间信息，获取到就可以了。以下： 1、依赖jQuery代码： 123function getServerDate()&#123; return new Date($.ajax(&#123;async: false&#125;).getResponseHeader(&quot;Date&quot;));&#125; 以上函数返回的就是一个Date对象，注意在使用ajax时必须同步，要不然无法返回时间日期。 无需填写请求链接； 如果服务器时间和本地时间有时差，需要做校正。 2、原生代码： 12345678910111213function getServerDate()&#123; var xhr = null; if(window.XMLHttpRequest)&#123; xhr = new window.XMLHttpRequest(); &#125;else&#123; // ie xhr = new ActiveObject(&quot;Microsoft&quot;) &#125; xhr.open(&quot;GET&quot;,&quot;/&quot;,false)//false不可变 xhr.send(null); var date = xhr.getResponseHeader(&quot;Date&quot;); return new Date(date);&#125; 同样返回的是一个Date对象，xhr.open()必须使用同步; 无需填写请求链接;open，send，和getResponseHeader 必须按序编写。 如需使用异步请求，可监听onreadystatechange状态来做不同的操作。 12345678910111213141516171819function getServerDate()&#123; var xhr = null; if(window.XMLHttpRequest)&#123; xhr = new window.XMLHttpRequest(); &#125;else&#123; // ie xhr = new ActiveObject(&quot;Microsoft&quot;) &#125; xhr.open(&quot;GET&quot;,&quot;/&quot;,true); xhr.send(null); xhr.onreadystatechange=function()&#123; var time,date; if(xhr.readyState == 2)&#123; time = xhr.getResponseHeader(&quot;Date&quot;); date = new Date(time); console.log(date); &#125; &#125;&#125; 使用异步不是很方便返回时间。 这里的readyState有四种状态，方便做不同处理： 0: 请求未初始化1: 服务器连接已建立2: 请求已接收3: 请求处理中4: 请求已完成，且响应已就绪失败状态，status的值： 200: “OK” 404: 未找到页面]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
       </tags>
   </entry>
   <entry>
